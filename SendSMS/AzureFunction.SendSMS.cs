@@ -1,4 +1,4 @@
-/* 
+/*
     Azure Function
 */
 
@@ -21,7 +21,7 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
     if(smsText == null) { 
         ah.Log(log, responseMsg);
     }
-    else{
+    else {
 
         var finalSmsText = $"[{DateTime.Now}][{smsText}]";
         smsID            = SendSmsHelper.SendSMS(finalSmsText, to);
