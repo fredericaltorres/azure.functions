@@ -13,21 +13,17 @@ public class AzureFunctionHelper {
         this._req = req;
         this._log = log;
     }
-
     public async Task<HttpResponseMessage> GetResponse(bool succeeded, string msg) {
 
         return this._req.CreateResponse( succeeded ? HttpStatusCode.OK : HttpStatusCode.BadRequest, msg);
     }
-
     private static dynamic _bodyData = null;
-
     public async Task<dynamic> GetBody() {
         
         if(_bodyData == null)
             _bodyData = await this._req.Content.ReadAsAsync<object>();
         return _bodyData;
     }
-
     public async Task<string> GetParameter(string paramName, string defaultValue = null) {
 
         // Parse query parameter smsText
@@ -39,7 +35,6 @@ public class AzureFunctionHelper {
 
         return val;
     }
-
     public void Log(TraceWriter log, string msg) {
     
         this._log.Info($"[{DateTime.Now}]{msg}");  
