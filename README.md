@@ -11,7 +11,7 @@ Twillio.
 
 ### HTTP Get Syntax
 `
-https://XXXXX.azurewebsites.net/api/RequestSmsSending?code=XXXX&smsText=HowAreYou&To=+19787606031
+https://XXXXX.azurewebsites.net/api/RequestSmsSending?code=XXXX&smsText=HowAreYou&To=+1978XXXXXX
 `
 
 **Notes:** *You can also use an HTTP POST.*
