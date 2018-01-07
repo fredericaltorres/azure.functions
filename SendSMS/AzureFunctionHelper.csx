@@ -10,6 +10,7 @@ public class AzureFunctionHelper {
     TraceWriter _log;
 
     public AzureFunctionHelper(HttpRequestMessage req, TraceWriter log) {
+        
         this._req = req;
         this._log = log;
     }
