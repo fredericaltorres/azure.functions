@@ -12,11 +12,11 @@ using Twilio;
  
 public class SendSmsHelper
 {
-    internal const string ACCOUNT_SID  = "ACaa703f534daa6a07ec98bfd319769588";
-    internal const string AUTH_TOKEN   = "fc8af06f3cb98e6ff2ccf759d96fd419";
-    internal const string FRED_TWILLIO = "+19782126025";
-    internal const string FRED         = "+19787606031";
-    internal const string ALLY         = "+19787606113";
+    internal const string ACCOUNT_SID  = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+    internal const string AUTH_TOKEN   = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
+    internal const string FRED_TWILLIO = "+1978XXXXXXX";
+    internal const string FRED         = "+1978XXXXXXX";
+    internal const string ALLY         = "+19787XXXXXXX";
     internal const string FROM         = FRED_TWILLIO;
     
     public static string SendSMS(string text, string to)
