@@ -1,6 +1,6 @@
 /* 
     Azure Portal Subscription FredericALTorres@live.com
-    https://musb-sms.azurewebsites.net/api/RequestSmsSending?smsText=Hello Fred&code=uAR2rah93liM/nw1bb1c3owQIb2T06yiHKaUKnHBTFX4H7LHmvcZrA==
+    https://musb-sms.azurewebsites.net/api/RequestSmsSending?smsText=Hello Fred&code=urah93liM/nw1bb1c3owQIb2T06yiHKaUKnHBTFX4H7LHmvcZrA==
 
     From the plateform Feature Dialog, in the Azure Portal,
     Create a ref folder.
@@ -50,9 +50,9 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, TraceW
                 TWILLIO Call Back 
                     Configuration 
                         https://www.twilio.com/console/phone-numbers/PN4d0164a91ccc821b3c488e786af70ead
-                        callback: https://musb-sms.azurewebsites.net/api/RequestSmsSending?code=jT3Spm1mZhsd4aItGsSGPH5OcboIvcYfaMKBIIFEGsqP11SQaAcFQQ==&action=setAnswer
+                        callback: https://musb-sms.azurewebsites.net/api/RequestSmsSending?code=Spm1mZhsd4aItGsSGPH5OcboIvcYfaMKBIIFEGsqP11SQaAcFQQ==&action=setAnswer
                     how to setAnswer from a browser
-                    https://musb-sms.azurewebsites.net/api/RequestSmsSending?code=jT3Spm1mZhsd4aItGsSGPH5OcboIvcYfaMKBIIFEGsqP11SQaAcFQQ==&action=setAnswer&body=ManualTest
+                    https://musb-sms.azurewebsites.net/api/RequestSmsSending?code=1mZhsd4aItGsSGPH5OcboIvcYfaMKBIIFEGsqP11SQaAcFQQ==&action=setAnswer&body=ManualTest
              */
             case "setanswer" : // Http call made by the Twillio server when user send an answer
                 smsText = await ah.GetParameter("body");
