@@ -12,12 +12,23 @@ using Twilio;
  
 public class SendSmsHelper
 {
-    internal const string ACCOUNT_SID  = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-    internal const string AUTH_TOKEN   = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX";
-    internal const string FRED_TWILLIO = "+1978XXXXXXX";
-    internal const string FRED         = "+1978XXXXXXX";
-    internal const string ALLY         = "+19787XXXXXXX";
+    
+    internal const string FRED_TWILLIO = "+19782126025";
+    internal const string FRED         = "+19787606031";
+    internal const string ALLY         = "+19787606113";
     internal const string FROM         = FRED_TWILLIO;
+
+    static string ACCOUNT_SID {
+        get{
+            return System.Environment.GetEnvironmentVariable("ACCOUNT_SID");
+        }
+    }
+
+    static string AUTH_TOKEN {
+        get{
+            return System.Environment.GetEnvironmentVariable("AUTH_TOKEN");
+        }
+    }
     
     public static string SendSMS(string text, string to)
     {
